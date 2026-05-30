@@ -507,18 +507,18 @@ rule-providers:
   Advertising:    {<<: *BehaviorDN, url: 'https://github.com/666OS/rules/raw/release/mihomo/domain/Advertising.mrs'}
   Private:        {<<: *BehaviorDN, url: 'https://github.com/666OS/rules/raw/release/mihomo/domain/Private.mrs'}
   # 融合第二份新增域名规则集
-  FCM:            {<<: *BehaviorDN, url: 'https://raw.githubusercontent.com/echs-top/proxy/main/rules/mrs/googlefcm.mrs'}  # 04-26: fcm_domain.mrs → googlefcm.mrs
-  Captcha:        {<<: *BehaviorDN, url: 'https://raw.githubusercontent.com/echs-top/proxy/main/rules/mrs/captcha_domain.mrs'}
+  FCM:            {<<: *BehaviorDN, url: 'https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/googlefcm.mrs'}  # echs-top 已失效，改用 MetaCubeX geosite
+  Captcha:        {<<: *BehaviorDN, url: 'https://raw.githubusercontent.com/echs-top/proxy/main/mrs/domain/captcha.mrs'}  # echs-top 仓库重构后的新路径
   LocationDKS:    {<<: *BehaviorDN, url: 'https://github.com/666OS/rules/raw/release/mihomo/domain/LocationDKS.mrs'}
   Direct:         {<<: *BehaviorDN, url: 'https://github.com/666OS/rules/raw/release/mihomo/domain/Direct.mrs'}
   Download:       {<<: *BehaviorDN, url: 'https://github.com/666OS/rules/raw/release/mihomo/domain/Download.mrs'}
   XPTV:           {<<: *BehaviorDN, url: 'https://github.com/666OS/rules/raw/release/mihomo/domain/XPTV.mrs'}
   AppleCN:        {<<: *BehaviorDN, url: 'https://github.com/666OS/rules/raw/release/mihomo/domain/AppleCN.mrs'}
-  MicrosoftCN:    {<<: *BehaviorDN, url: 'https://raw.githubusercontent.com/echs-top/proxy/main/rules/mrs/microsoft-cn.mrs'}
-  GamesCN:        {<<: *BehaviorDN, url: 'https://raw.githubusercontent.com/echs-top/proxy/main/rules/mrs/games-cn.mrs'}
+  MicrosoftCN:    {<<: *BehaviorDN, url: 'https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft@cn.mrs'}  # echs-top 已失效，改用 MetaCubeX geosite
+  GamesCN:        {<<: *BehaviorDN, url: 'https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games-cn.mrs'}  # echs-top 已失效，改用 MetaCubeX geosite
   AI:             {<<: *BehaviorDN, url: 'https://github.com/666OS/rules/raw/release/mihomo/domain/AI.mrs'}
   Speedtest:      {<<: *BehaviorDN, url: 'https://github.com/666OS/rules/raw/release/mihomo/domain/Speedtest.mrs'}
-  GoogleCN:       {<<: *BehaviorDN, url: 'https://raw.githubusercontent.com/echs-top/proxy/main/rules/mrs/google-cn_domain.mrs'}  # Google中国域名直连
+  GoogleCN:       {<<: *BehaviorDN, url: 'https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google@cn.mrs'}  # Google中国域名直连（echs-top 已失效，改用 MetaCubeX geosite）
   Github:         {<<: *BehaviorDN, url: 'https://raw.githubusercontent.com/666OS/rules/refs/heads/release/mihomo/domain/GitHub.mrs'}
   Telegram:       {<<: *BehaviorDN, url: 'https://github.com/666OS/rules/raw/release/mihomo/domain/Telegram.mrs'}
   Twitter:        {<<: *BehaviorDN, url: 'https://github.com/666OS/rules/raw/release/mihomo/domain/Twitter.mrs'}
@@ -537,7 +537,7 @@ rule-providers:
   Facebook:       {<<: *BehaviorDN, url: 'https://github.com/666OS/rules/raw/release/mihomo/domain/Facebook.mrs'}
   Proxy:          {<<: *BehaviorDN, url: 'https://github.com/666OS/rules/raw/release/mihomo/domain/Proxy.mrs'}
   China:          {<<: *BehaviorDN, url: 'https://github.com/666OS/rules/raw/release/mihomo/domain/China.mrs'}
-  Trackerslist:   {<<: *BehaviorDN, url: 'https://raw.githubusercontent.com/echs-top/proxy/main/rules/mrs/trackerslist.mrs'}  # 融合第二份
+  Trackerslist:   {<<: *BehaviorDN, url: 'https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-public-tracker.mrs'}  # echs-top 已失效，改用 MetaCubeX geosite
 
   # -------- IP 规则 --------
   AdvertisingIP:  {<<: *BehaviorIP, url: 'https://github.com/666OS/rules/raw/release/mihomo/ip/Advertising.mrs'}
