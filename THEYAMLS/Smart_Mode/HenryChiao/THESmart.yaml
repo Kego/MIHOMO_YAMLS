@@ -406,6 +406,13 @@ rules:
   - RULE-SET,GamesCN,直接连接
   - RULE-SET,GoogleCN,直接连接                        # 新增：Google中国域名直连
 
+  # --- 自定义直连域名（按需修改） ---
+  - DOMAIN-SUFFIX,smartx.com,DIRECT
+  - DOMAIN-SUFFIX,arcfra.com,DIRECT
+  - DOMAIN-SUFFIX,zbsci.cc,DIRECT
+  - DOMAIN-SUFFIX,gitgo.cc,DIRECT
+  - DOMAIN-KEYWORD,smtx,DIRECT
+
   # ======== 服务分流（SUB-RULE：先判断QUIC再目标策略）========
   - SUB-RULE,(RULE-SET,Captcha),captcha_rules
   - SUB-RULE,(RULE-SET,AI),ai_rules
